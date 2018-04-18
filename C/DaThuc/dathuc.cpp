@@ -4,7 +4,6 @@
 #include<math.h> 
 #define MAX_SIZE 100
 using namespace std;
-// THEM DA THUC, SAP XEP, TIM KIEM DA THUC
    	struct  poly{
    	float coef[100]; //he so
    	int expon[100];  //so mu~
@@ -51,6 +50,33 @@ poly add(int a, float b, poly &p){ // Ham them *So mu~ + he So*
  if(i>=p.size) return -1;
  else return i;
 }
+
+void rutgon(Sohang *p, int &n){
+	int i,j;
+	i = 0;
+	while(j<n-1){
+		j=i+1;
+		while(j<n){
+		if(p[i].somu == p[j].somu){
+			p[i].heso = p[i].heso+p[j].heso;
+			DelItem(p,j,n);
+		}
+		j++;
+	}
+	i++;
+	}
+}
+
+
+
+int cong(int a, float b, poly &p){
+
+
+}
+
+
+
+
   int main(){
   	poly p;
   	create (p);
