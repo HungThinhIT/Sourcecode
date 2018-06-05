@@ -8,5 +8,5 @@
 # --> 2. TRUY VẤN TÀI KHOẢN
 # --> 3. RÚT TIỀN TỪ TÀI KHOẢN
 # --> 4. NẠP TIỀN TỪ TÀI KHOẢN
-# Lưu ý nhỏ: 1. Phải bỏ file atm_stub vào trong src của eclip & bin mới chạy được
-#            2. Kết nối Driver CSDL SQL SERVER(SQLJDBC_6.0)
+# Lưu ý : 1. Phải bỏ file atm_stub vào trong src của eclipse & bin mới chạy được
+# 2. Kết nối Driver CSDL SQL SERVER(SQLJDBC_6.0)
