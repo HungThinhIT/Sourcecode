@@ -3,7 +3,8 @@ package bmi_calculation;
 import java.util.Scanner;
 
 /*
- * Author: Nguyen Hung Thinh
+ * Tác giả: Nguyễn Hưng Thịnh.
+ * Mô tả: Tính chỉ số BMI dựa vào cân nặng(kg) và chiều cao(cm) và in ra kết quả chỉ số BMI đó và tình trạng sức khoẻ.
  */
 
 public class BMI_nonObject {
