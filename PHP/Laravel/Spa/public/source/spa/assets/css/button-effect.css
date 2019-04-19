@@ -1,0 +1,136 @@
+/*<=========================================>*/
+/*<============== BUTTON EFFECT ============>*/
+/*<=========================================>*/
+
+
+.btn-ob {
+	position: relative;
+	padding: 7px 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bolder;
+	color: #26C4D5;
+}
+.btn-ob:hover,
+.btn-ob:focus {
+	cursor: pointer;
+	text-decoration: none;
+	color: #26C4D5;
+}
+.btn-ob:before,
+.btn-ob:after {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
+	border: 1px solid transparent;
+	background: transparent;
+}.btn-ob:hover:before {
+	animation: borderhvr .3s linear forwards;
+}
+.btn-ob:hover:after {
+	animation: borderhvr2 .3s linear forwards;
+}
+
+
+.btn-book-service {
+	position: relative;
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding: 10px 20px;
+	background-image: -webkit-linear-gradient(left, #29d0d2, #0095f4);
+	background-image: -o-linear-gradient(left, #29d0d2, #0095f4);
+	background-image: linear-gradient(to right, #29d0d2, #0095f4);
+	border: 1px solid #26C4D5;
+	border-radius: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: Roboto;
+	color: #fff;
+	text-shadow: 1px 1px rgba(255,255,255,.3);
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+	transition: all 1s;
+}
+.btn-book-service:hover,
+.btn-book-service:focus {
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	background-image: linear-gradient(to right, rgba(38,196,213,.5), rgba(38,196,213,1));
+}
+
+
+.btn-gallery {
+	position: relative;
+	padding: 10px 27px;
+	border: 1px solid #26C4D5;
+	border-radius: 24px;
+	background: #fff;
+	box-shadow: 0 2px 5px #ccc;
+	transition: all .3s;
+}
+.btn-gallery:hover,
+.btn-gallery:focus {
+	cursor: pointer;
+	background: linear-gradient(to right, #29d0d2, #0095f4);
+	font-weight: bold;
+	color: #fff;
+}
+.current {
+	background: linear-gradient(to right, #29d0d2, #0095f4);
+	font-weight: bold;
+	color: #fff;
+}
+
+@media(max-width: 768px) {
+	.btn-gallery {
+		
+	}
+}
+
+input[type="checkbox"] {
+	position: relative;
+	width: 60px;
+	height: 20px;
+	--webkit-appearance: none;
+	background: linear-gradient(135deg,#ffffff 30%,#dddddd 100%);
+	outline: none;
+	box-shadow: 0 0 0 2px #dddddd, inset 0 0 4px rgba(221,221,221,1), 0 2px 6px rgba(0,0,0,.5), inset 0 0 3px rgba(221,221,221,.2);
+	border-color: #ffb822;
+	border-radius: 10px;
+}
+input[type="checkbox"]:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 20px;
+	background: linear-gradient(135deg,#dddddd 30%,#ffffff 100%);
+	border-radius: 2px;
+	box-shadow: 0 0 0 1px #dddddd;
+	transform: scale(.98,.96);
+	transition: .3s;
+}
+input[type="checkbox"]:after {
+	content: '';
+	position: absolute;
+	top: calc(50% - 2px);
+	left: 32px;
+	width: 4px;
+	height: 4px;
+	background: linear-gradient(0deg, #6b6b6b, #dddddd);
+	border-radius: 4px;
+	transition: .3s;
+}
+input:checked[type="checkbox"]:before {
+	left: 20px;
+}
+input:checked[type="checkbox"]:after {
+	left: 52px;
+	background: #63cdff;
+	box-shadow: 0 0 3px #13b3ff, 0 0 9px #13b3ff;
+}
